@@ -1,0 +1,58 @@
+{
+    "name": "xmlfeeds/xml-feeds",
+    "description": "PHP library for generating XML feeds for news aggregators",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "rss",
+        "rss2",
+        "atom",
+        "xml",
+        "feed",
+        "news",
+        "yandex",
+        "google-news",
+        "yandex-news",
+        "yandex-turbo",
+        "yandex-zen",
+        "aggregator",
+        "sitemap",
+        "psr-3"
+    ],
+    "homepage": "https://github.com/vamischenko/xmlfeeds",
+    "authors": [
+        {
+            "name": "Vladislav Mischenko",
+            "email": "vamischenko@gmail.com",
+            "homepage": "https://github.com/vamischenko"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-dom": "*",
+        "ext-xmlwriter": "*",
+        "ext-libxml": "*",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "XmlFeeds\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XmlFeeds\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpstan": "phpstan analyse",
+        "cs-fix": "php-cs-fixer fix",
+        "benchmark": "@php tools/benchmark.php"
+    }
+}

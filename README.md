@@ -5,7 +5,7 @@ PHP **8.2+** библиотека для генерации XML-фидов (RSS 
 ## Установка
 
 ```bash
-composer require xmlfeeds/xml-feeds
+composer require vamischenko/xmlfeeds
 ```
 
 Требования: PHP 8.2+, `ext-dom`, `ext-xmlwriter`, `ext-libxml`.

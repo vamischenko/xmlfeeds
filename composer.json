@@ -1,5 +1,5 @@
 {
-    "name": "xmlfeeds/xml-feeds",
+    "name": "vamischenko/xmlfeeds",
     "description": "PHP library for generating XML feeds for news aggregators",
     "type": "library",
     "license": "MIT",
